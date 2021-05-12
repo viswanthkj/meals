@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 
 
 
-const CategoryMealScreen = props => {
+const CategoryMealsScreen = props => {
   return(
       <View style={styles.screen}>
           <Text>This is CategoryMealScreen!!</Text>
@@ -12,7 +12,7 @@ const CategoryMealScreen = props => {
 
 };
 
-export default CategoryMealScreen;
+export default CategoryMealsScreen;
 
 const styles = StyleSheet.create({
     screen: {
