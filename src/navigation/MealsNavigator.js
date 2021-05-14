@@ -8,13 +8,27 @@ import CategoryMealsScreen from '../screens/CategoryMealsScreen'
 import MealDetailScreen from '../screens/MealDetailScreen'
 
 
+import Colors from '../constants/Colors';
+
 const MealsNavigator = createStackNavigator({
-    Categories: CategoriesScreen,
+    Categories: {
+        screen: CategoriesScreen
+    },
     CategoryMeals: {
         screen: CategoryMealsScreen
     },
     MealDetail:MealDetailScreen
-
-});
+},
+{
+    // initialRouteName: 'Categories',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor:  Colors.primary
+      },
+      headerTintColor: 'white',
+      headerTitle: 'A Screen'
+    }
+  }
+);
 
 export default createAppContainer(MealsNavigator)
