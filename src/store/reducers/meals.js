@@ -1,9 +1,8 @@
-import { Meals } from '../../data/dummy-data'
-
+import { MEALS } from '../../data/dummy-data'
 
 const initialState = {
-    meals: Meals,
-    filteredMeals: Meals,
+    meals: MEALS,
+    filteredMeals: MEALS,
     favoriteMeals: [], 
 }
 
@@ -12,4 +11,4 @@ const mealsReducer = (state=initialState,action) => {
     return state;
 }
 
-export default mealsReducer
+export default mealsReducer;
